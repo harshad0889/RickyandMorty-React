@@ -1,8 +1,8 @@
 import React from "react";
-import "./card.css";
+import "./charecterlist.css";
 import { Link, useNavigate } from "react-router-dom";
 
-const Card = () => {
+const CharecterList = () => {
   return (
     <div className="card">
       <Link to="/charecter">
@@ -19,4 +19,4 @@ const Card = () => {
   );
 };
 
-export default Card;
+export default CharecterList;

@@ -1,7 +1,7 @@
 import React from "react";
 import "./home.css";
 import { useState } from "react";
-import Card from "../Card/Card";
+import CharecterList from "../charecterList/charecterList";
 
 
 const  HomePage=()=> {
@@ -26,7 +26,7 @@ const [charecter] = useState(["AA","BB","CC","DD","EE","FF"])
           <p>Charecters</p>
           <div className="card_div">
           {charecter.map(()=>
-          <Card ></Card>)}
+          <CharecterList />)}
           </div>
         </div>
       </div>
