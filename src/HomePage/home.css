@@ -2,58 +2,93 @@
   width: 100%;
   margin: 0 auto;
   background-color: rgba(255, 255, 255, 0.986);
+  height: calc(100vh - 50px);
+  
 }
 
-.content_container{
+.content_container {
   width: 80%;
   margin: 0 auto;
   background-color: rgba(255, 255, 255, 0.986);
+  padding-bottom: 50px;
 }
 
-.search_box{
-    padding-top: 30px ;
-    background-color: rgba(255, 255, 255, 0.986);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.search_box {
+  padding-top: 30px;
+  background-color: rgba(255, 255, 255, 0.986);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3px;
 }
-.search_box p{
-    font-size: 24px;
-    font-weight: 700;
-    text-transform: capitalize;
-}
-
-.input_outer_div{
-    background-color: white;
-    border-radius: 8px;
-    padding: 8px;
-    margin-top: 5px;
-    width: 40%;
-    display: flex;
-    justify-content: center;
-    box-shadow: 0px 10px 38px -3px rgba(0,0,0,0.4);
-    border: 1px solid #f1f1f1;
+.search_box p {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: capitalize;
 }
 
-.input{
-    border: 0px solid #fff;
-    outline: none;
-    width: 80%;
+.input_outer_div {
+  background-color: white;
+  border-radius: 8px;
+  padding: 8px;
+  margin-top: 5px;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 10px 38px -3px rgba(0, 0, 0, 0.4);
+  border: 1px solid #f1f1f1;
 }
-.btn{
-    margin-left: 5px;
-    background-color: #0099ff;
-    width: 70px;
-    height: 25px;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+.input {
+  border: 0px solid #fff;
+  outline: none;
+  width: 80%;
+}
+.btn {
+  margin-left: 5px;
+  background-color: #0099ff;
+  width: 70px;
+  height: 25px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card_div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
+}
+
+.card_section {
+  margin-top: 40px;
+  /* background-color: #0099ff; */
+  padding: 10px;
+}
+
+.card_section p {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: capitalize;
 }
 
 @media screen and (max-width: 768px) {
   .content_container {
     width: 100%;
   }
+  .card_div {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .input_outer_div {
+    width: 80%;
+  }
 }
+@media screen and (max-width: 600px) {
+  
+  .card_div {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+

@@ -38,6 +38,7 @@ p {
  padding-right: 10px;
   background: #f35555;
   width: 100%;
+  z-index: 999;
 }
 
 .content{
