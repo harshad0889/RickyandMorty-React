@@ -5,7 +5,7 @@ import Card from "../Card/Card";
 
 
 const  HomePage=()=> {
-const [charecter,setCharecter] = useState(["AA","BB","CC","DD","EE","FF"])
+const [charecter] = useState(["AA","BB","CC","DD","EE","FF"])
 
   return (
     <div className="home_container">
@@ -26,7 +26,7 @@ const [charecter,setCharecter] = useState(["AA","BB","CC","DD","EE","FF"])
           <p>Charecters</p>
           <div className="card_div">
           {charecter.map(()=>
-          <Card></Card>)}
+          <Card ></Card>)}
           </div>
         </div>
       </div>

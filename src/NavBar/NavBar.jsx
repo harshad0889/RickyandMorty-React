@@ -14,7 +14,7 @@ const NavBar = (props) => {
       </div>
 
       <div className="nav_user">
-        <img src="/assets/img/user.png" className="logo" />
+        <img src="/assets/img/user.png" className="logo" alt="hellos"/>
       </div>
     </div>
   );
