@@ -4,7 +4,7 @@ import "./charecter.css";
 const Charecter = () => {
   console.log("el");
   return (
-    <div className="home_container">
+    <div className="char_container">
       <div className="continer_flex">
         <div className="charecter_card">
           <div className="name_section">
