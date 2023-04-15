@@ -43,7 +43,7 @@ a{
   top: 0;
  padding-left: 10px;
  padding-right: 10px;
-  background: #ffffff;
+  background: #212121;
   border-bottom: 1px solid #f1f1f1;
   width: 100%;
   z-index: 999;
@@ -69,10 +69,13 @@ a{
 .large{
   font-size: 20px;
   font-weight: 700;
+  color: #f1f1f1;
 }
 
 .small{
   font-size: 16px;
   font-weight: 600;
+  color: #f1f1f1;
+
 }
 

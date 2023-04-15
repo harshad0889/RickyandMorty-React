@@ -7,8 +7,14 @@ const Charecter = () => {
     <div className="char_container">
       <div className="continer_flex">
         <div className="charecter_card">
-          <div className="name_section">
-            <div>
+          
+
+          <div className="d-flex">
+            <div className="flex-1">
+              
+                <p>ricky@gmail.com</p>
+            </div>
+            <div className="flex-3">
               <h1>Ricky Karlon</h1>
               <p>
                 {" "}
@@ -18,14 +24,19 @@ const Charecter = () => {
                 may be used as a placeholder before final copy is available
               </p>
             </div>
-            
+            <div className="bottom_panel">
+              <div className="alive_tile">Alive</div>
+              <div className="alive_tile">Human</div>
+              
+            </div>
           </div>
-          <div className="flex1">
+          <div className="top_panel">
             <img
               src="/assets/img/char1.jpg"
               className="charecter_image"
               alt="hellos"
             />
+            <div className="alive_tag">alive</div>
           </div>
         </div>
       </div>

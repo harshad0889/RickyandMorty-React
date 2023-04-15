@@ -53,3 +53,14 @@
 .card p ::before {
   content: "...";
 }
+
+
+.alive_tag{
+  position: absolute;
+  background-color: rgb(33, 33, 33);
+  color: #fff;
+  padding: 2px 15px;
+  border-radius: 4px;
+  right: 5px;
+  top: 15px;
+}

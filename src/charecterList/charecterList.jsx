@@ -1,11 +1,12 @@
 import React from "react";
 import "./charecterlist.css";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, } from "react-router-dom";
 
 const CharecterList = () => {
   return (
     <div className="card">
       <Link to="/charecter">
+        <div className="alive_tag">Alive</div>
         <img src="/assets/img/char1.jpg" className="char_image" alt="hello" />
         <h3>Ricky</h3>
         <p>

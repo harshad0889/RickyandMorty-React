@@ -29,6 +29,13 @@ const [charecter] = useState(["AA","BB","CC","DD","EE","FF"])
           <CharecterList />)}
           </div>
         </div>
+
+
+        <div className="d-flex">
+          <div className="flex-1">hello</div>
+          <div className="flex-3">hello</div>
+          <div className="flex-1">hello</div>
+        </div>
       </div>
     </div>
   );
