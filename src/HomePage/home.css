@@ -1,0 +1,12 @@
+.home_container{
+width: 50%;
+margin: 0 auto;
+background-color: red;
+}
+
+@media screen and (max-width:768px){
+    .home_container{
+        width: 100%;
+    }
+    
+}
