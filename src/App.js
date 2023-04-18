@@ -14,7 +14,7 @@ function App() {
       <div style={{marginTop:50}}>
         <Routes>
           <Route exact path="/" element={<HomePage />} />
-          <Route path="/charecter" element={<Charecter />} />
+          <Route path="/charecter/:id" element={<Charecter />} />
         </Routes>
       </div>
     </Router>

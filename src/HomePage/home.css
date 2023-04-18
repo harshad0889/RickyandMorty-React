@@ -85,6 +85,15 @@
 .flex-3{
   flex:3;
 }
+.laoding_view{
+  display: flex;
+  justify-content: center;
+}
+
+.loader{
+  /* width:250px; */
+  height: 50px;
+}
 
 @media screen and (max-width: 768px) {
   .content_container {

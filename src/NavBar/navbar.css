@@ -1,0 +1,34 @@
+.logo{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+  }
+
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+   padding-left: 10px;
+   padding-right: 10px;
+    background: #212121;
+    border-bottom: 1px solid #f1f1f1;
+    width: 100%;
+    z-index: 999;
+  }
+  .Name_title{
+    vertical-align: middle;
+   }
+   
+   .large{
+     font-size: 20px;
+     font-weight: 700;
+     color: #f1f1f1;
+   }
+   
+   .small{
+     font-size: 16px;
+     font-weight: 600;
+     color: #f1f1f1;
+   
+   }

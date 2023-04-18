@@ -8,14 +8,15 @@
   justify-content: center;
 }
 
-.continer_flex {
+.continer_flexx {
   width: 60%;
   margin: 0 auto;
   align-items: center;
+  margin-top: 15%;
 }
 
 .charecter_card {
-  width: 100%;
+  /* width: 100%; */
   border-radius: 8px;
   box-shadow: rgba(17, 17, 26, 0.4) 0px 0px 16px;
   background-color: rgb(255, 255, 255);
@@ -62,6 +63,12 @@
   object-fit: cover;
   border-radius: 8px;
 }
+.episode_image {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
 .name_section h1{
   font-size: 36px;
   font-weight: 700;
@@ -91,6 +98,38 @@
  
 }
 
+.episode_section{
+  margin-top: 50px;
+  
+}
+
+.episode_row{
+  display: flex;
+  overflow: scroll;
+  background-color: #fafafa;
+  margin-bottom: 40px;
+}
+
+.episode_card{
+  border-radius: 8px;
+  background-color: #ffb7b7;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+  padding: 8px;
+  margin-left: 10px;
+  width: 150px;
+  height: inherit;
+}
+
+.episode_card:first-child{
+  margin-left: 0px;
+}
+
+
+
+::-webkit-scrollbar{
+  display: none;
+}
+
 
 @media screen and (max-width:768px) {
   .charecter_card{
@@ -98,7 +137,7 @@
     /* margin-top: 100px; */
   }
 
-  .continer_flex{
+  .continer_flexx{
     width:90%;
     height: inherit;
   }

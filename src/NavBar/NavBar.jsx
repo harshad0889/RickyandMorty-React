@@ -1,5 +1,7 @@
 import React from "react";
 
+import "./navbar.css";
+
 const NavBar = (props) => {
   return (
     <div className="navbar">
@@ -14,7 +16,7 @@ const NavBar = (props) => {
       </div>
 
       <div className="nav_user">
-        <img src="/assets/img/user.png" className="logo" alt="hellos"/>
+        <img src="/assets/img/user.png" className="logo" alt="hellos" />
       </div>
     </div>
   );
