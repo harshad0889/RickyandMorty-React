@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import "./charecterlist.css";
 import { Link, } from "react-router-dom";
 
 const CharecterList = (props) => {
+
 
   return (
     <div className="card">

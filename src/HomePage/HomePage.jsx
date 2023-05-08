@@ -6,15 +6,18 @@ import axios from "axios";
 const HomePage = () => {
   const [charecter, setCharecter] = useState([]);
   const [isLoading,setisLoading] = useState(false)
+  const [searchQuery, setSearchQuery] = useState("");
 
   useEffect(() => {
     getCharecterData();
-  }, []);
+  }, [searchQuery]);
+
+  const baseurl = "https://rickandmortyapi.com/api/character/?name="
 
   //-----------get all charecters data ------------
   const getCharecterData = async () => {
     setisLoading(true)
-    await axios("https://rickandmortyapi.com/api/character").then(
+    await axios(baseurl+searchQuery).then(
       (res) => {
         console.log(res, "axios response");
         setisLoading(false)
@@ -27,6 +30,8 @@ const HomePage = () => {
     );
   };
 
+  
+
   return (
     <div className="home_container">
       <div className="content_container">
@@ -37,7 +42,10 @@ const HomePage = () => {
               className="input"
               type="text"
               placeholder="serach your charecter "
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
             />
+            <div className="close_btn" onClick={()=>setSearchQuery("")}>x</div>
             <button className="btn">Search</button>
           </div>
         </div>

@@ -88,19 +88,26 @@ const Charecter = () => {
             </div>
 
             <div className="episode_section">
+            <h1>Episodes</h1>
               <div className="episode_row">
+              
                 {Episode?.map((item) => (
                   <div className="episode_card">
+                    
                     <img
-                  src={charecter.image}
-                  className="episode_image"
-                  alt="hellos"
-                />
+                      src={charecter.image}
+                      className="episode_image"
+                      alt="hellos"
+                    />
+                    <div className="gradient-panel"></div>
+                    <p className="date_view">{item?.air_date}</p>
+                    <h3>{item?.episode}</h3>
                     <p>{item?.name}</p>
                   </div>
                 ))}
               </div>
             </div>
+
           </>
         )}
       </div>
